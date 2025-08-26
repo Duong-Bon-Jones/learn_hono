@@ -6,14 +6,19 @@ import {
   HeadContent,
   Scripts,
   Link,
+  createRootRouteWithContext,
 } from "@tanstack/react-router";
 import appCss from "@/styles/app.css?url";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-const queryClient = new QueryClient();
+export const queryClient = new QueryClient();
 
-export const Route = createRootRoute({
+interface MyRouterContext {
+  queryClient: QueryClient;
+}
+
+export const Route = createRootRouteWithContext<MyRouterContext>()({
   head: () => ({
     meta: [
       {
