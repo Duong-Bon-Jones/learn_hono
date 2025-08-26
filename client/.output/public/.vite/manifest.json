@@ -1,0 +1,83 @@
+{
+  "../../../../../~start/default-client-entry.tsx": {
+    "file": "assets/main-ZGQ9waUT.js",
+    "name": "main",
+    "src": "../../../../../~start/default-client-entry.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/expenses.tsx?tsr-split=component",
+      "src/routes/create-expense.tsx?tsr-split=component",
+      "src/routes/about.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/app-BDJnFfr8.css"
+    ]
+  },
+  "C:/Users/WBPC.VN/me/hono_fs/client/src/styles/app.css": {
+    "file": "assets/app-BDJnFfr8.css",
+    "src": "C:/Users/WBPC.VN/me/hono_fs/client/src/styles/app.css"
+  },
+  "_api--WybffIj.js": {
+    "file": "assets/api--WybffIj.js",
+    "name": "api"
+  },
+  "_button-DetM-_rr.js": {
+    "file": "assets/button-DetM-_rr.js",
+    "name": "button",
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx",
+      "_api--WybffIj.js"
+    ]
+  },
+  "_useQuery-BfB2vY0N.js": {
+    "file": "assets/useQuery-BfB2vY0N.js",
+    "name": "useQuery",
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/about.tsx?tsr-split=component": {
+    "file": "assets/about-BoWVfHaK.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/create-expense.tsx?tsr-split=component": {
+    "file": "assets/create-expense-einIzK10.js",
+    "name": "create-expense",
+    "src": "src/routes/create-expense.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx",
+      "_button-DetM-_rr.js",
+      "_api--WybffIj.js"
+    ]
+  },
+  "src/routes/expenses.tsx?tsr-split=component": {
+    "file": "assets/expenses-BkUBYxZm.js",
+    "name": "expenses",
+    "src": "src/routes/expenses.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx",
+      "_api--WybffIj.js",
+      "_useQuery-BfB2vY0N.js"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-DUmA7W0M.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx",
+      "_button-DetM-_rr.js",
+      "_api--WybffIj.js",
+      "_useQuery-BfB2vY0N.js"
+    ]
+  }
+}
