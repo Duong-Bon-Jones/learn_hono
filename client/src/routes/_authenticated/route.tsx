@@ -1,8 +1,8 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/_authenticated")({
-  beforeLoad: async ({ location }) => {
-    return { user: false };
+  beforeLoad: async ({ context }) => {
+    return { user: true };
   },
   component: RouteComponent,
 });

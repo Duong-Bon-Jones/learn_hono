@@ -21,7 +21,7 @@ function FieldInfo({ field }: { field: AnyFieldApi }) {
   );
 }
 
-const createExpense = async (value: { title: string; amount: number }) => {
+const createExpense = async (value: { title: string; amount: string }) => {
   const res = await api.expenses.$post({ json: value });
 
   if (!res.ok) {
@@ -48,7 +48,7 @@ function RouteComponent() {
   const form = useForm({
     defaultValues: {
       title: "",
-      amount: 0,
+      amount: "",
     },
     onSubmit: ({ value }) => {
       mutation.mutate(value);
@@ -91,10 +91,9 @@ function RouteComponent() {
                 id={field.name}
                 name={field.name}
                 value={field.state.value}
-                type="number"
                 placeholder="Amount"
                 onBlur={field.handleBlur}
-                onChange={(e) => field.handleChange(e.target.valueAsNumber)}
+                onChange={(e) => field.handleChange(e.target.value)}
               />
               <FieldInfo field={field} />
             </>
