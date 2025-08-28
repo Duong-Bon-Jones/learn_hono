@@ -6,9 +6,8 @@
   "scripts": {
     "start": "bun server/index.ts",
     "dev": "bun --watch server/index.ts",
-    "build": "bun run build:client && bun run build:server",
+    "build": "bun run build:client && bun start",
     "build:client": "cd client && bun run build",
-    "build:server": "bun build server/index.ts --target bun --outdir dist/server",
     "postinstall": "cd client && bun install"
   },
   "devDependencies": {
